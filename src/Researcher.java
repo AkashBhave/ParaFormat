@@ -11,11 +11,29 @@ public class Researcher {
     }
 
     public static void main(String[] args) {
-        generateLink();
+        System.out.println(generateSearchTerm());
     }
 
-    public static String generateLink() {
-        return "LINK GOES HERE";
+    /*
+    Creates a valid search term that can be used
+    in URLs
+     */
+    private static String generateSearchTerm() {
+        String searchTerm = "";
+        Scanner userInput = new Scanner(System.in);
+
+        boolean inputCorrect = false;
+        while (!inputCorrect) {
+            System.out.println("Enter a search term.");
+
+            searchTerm = userInput.nextLine();
+            if (!searchTerm.isEmpty()) {
+                inputCorrect = true;
+            }
+        }
+
+        return searchTerm;
+
     }
 
 }
