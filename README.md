@@ -1,2 +1,2 @@
 # ParaFormat
-A Java application that takes in search terms and "researches" information about the topic. Part of the ParaFormat application.
+A Java application that will research a topic given by the user and contruct a simple paragraph off what information was found. Currently only the **researcher** part of it is being developed.
